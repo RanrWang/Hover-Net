@@ -7,7 +7,7 @@ import torch
 import pandas as pd
 from torch.optim.lr_scheduler import StepLR
 import albumentations as A
-from pathml.datasets.pannuke import PanNukeDataModule
+from utils.data import PanNukeDataModule
 from pathml.ml.hovernet import HoVerNet, loss_hovernet, post_process_batch_hovernet
 from pathml.ml.utils import wrap_transform_multichannel, dice_score
 from pathml.utils import plot_segmentation,segmentation_lines
